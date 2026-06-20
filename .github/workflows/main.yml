@@ -1,0 +1,14 @@
+name: IITM Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 26ds1000040@ds.study.iitm.ac.in
+        run: echo "Hello from IITM!"
